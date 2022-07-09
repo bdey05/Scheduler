@@ -1,0 +1,59 @@
+.MuiFormLabel-root.Mui-focused {
+    color: #EEA835 !important;
+  }
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #EEA835 !important;
+  }
+
+ 
+
+  .signupBody{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  .oneline{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .email{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  span, .loginLink{
+    text-decoration: none;
+    color: #EEA835;
+  }
+
+  .divider{
+    height: 20px;
+  }
+
+  .signupRight{
+    width: 50%;
+    height: 100%;
+  }
+
+  .signupRight .img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .signupRight .img img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .create, .signupQuestion{
+    margin-bottom: 10px;
+  }
+
+  .period{
+    font-size: 35px;
+  }

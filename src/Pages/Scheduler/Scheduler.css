@@ -1,0 +1,405 @@
+body{
+  overflow: hidden;
+}
+
+.nameDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+
+}
+
+
+
+
+
+.react-calendar {
+  width: 400px;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #a0a096;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.react-calendar--doubleView {
+  width: 700px;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer>* {
+  width: 50%;
+  margin: 0.5em;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+}
+
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 0.5em;
+
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  text-align: center;
+  font-weight: bold;
+  background: none;
+
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__tile--now {
+  background: #75dadb;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #75dadb;
+}
+
+.react-calendar__tile--hasActive {
+  background: #EEA835;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #EEA835;
+}
+
+.react-calendar__tile--active {
+  background: #EEA835;
+  color: white;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #EEA835;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
+
+
+
+
+.schedulerContent {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+
+
+}
+
+.schedulerColumn {
+  width: 500px;
+
+
+}
+
+.currentDate {
+  font-size: 30px;
+  color: #EEA835;
+}
+
+.topText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+
+}
+
+.topRightText {
+
+  margin-left: 15px;
+}
+
+
+
+.e-timepicker.e-popup {
+  width: 100px;
+}
+
+.timeSelect {
+  border-radius: 10px;
+  color: red;
+  border-color: red;
+}
+
+.taskList {
+  text-align: left;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  overflow-y: auto;
+  height: 60%;
+  min-height: 500px;
+}
+
+.emptyTasks {
+  color: #EEA835;
+  font-size: 20px;
+}
+
+.task {
+  background-color: #EEA835;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+
+.taskComplete {
+  background-color: #d3c5ae;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.taskIncomplete {
+  background-color: #EEA835;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.taskTitle {
+  font-weight: bold;
+  white-space: nowrap;
+  margin-bottom: 2px;
+}
+
+.taskDate {
+  white-space: nowrap;
+}
+
+.weather {
+  text-align: center;
+}
+
+.locationError {
+  color: #EEA835;
+  font-size: 24px;
+}
+
+.weatherBox {
+  padding: 10px;
+  padding-left: 40px;
+  background-color: #EEA835;
+  border-radius: 10px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  gap: 50px;
+}
+
+
+.weatherInfo{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  width: 100%;
+}
+.cityName {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+
+
+.weatherDate{
+  color: black;
+  font-size: 15px;
+}
+.line{
+  background-color: black;
+  width: 90%;
+  height: 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.temperature, .temperature span{
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+
+.weatherDesc{
+  display: flex;
+  align-items: center;
+}
+
+.viewTaskDetails{
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin-top: 20%;
+ 
+}
+.noTask{
+  font-size: 17px;
+  
+}
+.editTask{
+  padding: 30px;
+  border: 2px solid #EEA835;
+  border-radius: 10px;
+  width: 95%;
+}
+
+.taskName{
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.taskDate, .taskDesc, .taskTime{
+  font-size: 17px;
+ 
+}
+
+.taskDesc{
+  margin-bottom: 5px;
+}
+
+.taskDesc{
+  word-break: break-all;
+}
+
+.taskTimeDiv, .taskDateDiv{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.edit, .delete{
+  width: 90%;
+  text-align: center;
+  background-color: #EEA835;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.delete{
+  background-color: rgb(221, 68, 68);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,10 @@
+.nav h1{
+    padding: 30px;
+    font-size: 40px;
+    color: #EEA835;
+    cursor: pointer;
+}
+
+.navLogo{
+    text-decoration: none;
+}
